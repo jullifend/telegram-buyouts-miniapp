@@ -22,7 +22,7 @@ from pydantic import BaseModel, Field
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent
-STATIC_DIR = BASE_DIR / "static"
+STATIC_DIR = BASE_DIR
 UPLOADS_DIR = BASE_DIR / "uploads"
 UPLOADS_DIR.mkdir(exist_ok=True)
 DB_PATH = Path(os.getenv("DB_PATH", BASE_DIR / "buyouts.sqlite3"))
